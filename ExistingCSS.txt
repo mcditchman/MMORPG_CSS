@@ -1,0 +1,214 @@
+/*Banner*/
+#header 
+{
+    background: url(%%banner%%);
+}
+
+/* MMORPG title text */
+.pagename, .pagename a 
+{
+    color: #fff; 
+}
+
+
+/* Subscriber Name */
+div.titlebox span.number:after {content: " adventurers";} /* Leave the space before the name! */
+			
+/*Replace readers.. */
+div.titlebox span.word {display: none;}
+.titlebox .users-online {display: inline;}
+.titlebox .users-online:before {display: none;}
+.titlebox .users-online .number {font-style: italic;font-size: 12px;}
+.titlebox .users-online .number:before {content: "(";}
+.titlebox .users-online .number:after {content: " questing)";}
+.titlelebox .word {display: none;}
+.titlebox .users-online, .titlebox .number {cursor: text;}	
+.titlebox .tagline {font-size: 12px;}	
+
+/* Front Page Link Style */
+.link
+{
+    border-color:#e9e9e9;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 10px;
+    border-bottom-style: none;
+}
+.linklisting .odd
+{ 
+    overflow: hidden !important;
+    margin-bottom: 0px;
+    min-height: 50px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.linklisting .even
+{ 
+    overflow: hidden !important;
+    margin-bottom: 0px;
+    /*background-color: rgb(245, 245, 245);*/
+    background-color: rgb(250, 250, 250);
+    min-height: 50px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.rank
+{
+    visibility: collapse;
+}
+
+.link .midcol
+{
+    margin-left: 0px;
+    width: 30px !important;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.entry
+{
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+
+fieldset, img
+{
+    padding-top: 3px;
+}
+
+
+/* Sidebar Style */
+.side
+{
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-left-color: white;
+}
+
+/* LINK FLAIR */
+.linkflair-legit .linkflairlabel {
+   text-transform: uppercase;
+   margin-left: 1em;
+   padding: 2px;
+   vertical-align: bottom;
+   margin-left: .3em;
+   background: #EBFFEB;
+   color: #777;
+   border-color: #8AE68A;
+}
+
+.linkflair-mmo .linkflairlabel {
+   visibility: collapse;
+}
+
+/* Mod Post Linkflair style */
+.linkflair-mod .title {
+  color: #FF3333 !important;
+  font-weight: bold;
+}
+
+/* LINK FLAIR FILTER */
+html:lang(lf) .link:not(.linkflair-mmo) {
+    display: none    }
+/* LF MMO Tag Filter */
+.side a[href*='#lf'] { 
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    margin-top:0px;
+    margin-left:20px;
+    border: 1px solid black;
+    font-size: 75%;
+    padding: 3px;
+    color: black;
+    font-weight: bold;
+    background: #CCFFCC;
+    width: 120px;
+text-align: center;
+}
+
+/* Filter to remove LF MMO Posts */
+html[lang="nf"] .linkflair-mmo{ display: none; }
+html[lang="nf"] .side a[href*='#cls']{ display: inline-block; }
+html[lang="lf"] .side a[href*='#cls']{ display: inline-block; }
+
+.side a[href*='#nf'] { 
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    margin-top:0px;
+    margin-left:5px;
+    border: 1px solid black;
+    font-size: 75%;
+    padding: 3px;
+    color: black;
+    font-weight: bold;
+    background: #FFCCCC;
+    width: 120px;
+text-align: center;
+}
+
+/* Clear Filter...filter */
+.side a[href*='#cls'] { 
+ display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    margin-top:5px;
+    margin-left:20px;
+    border: 1px solid black;
+    font-size: 75%;
+    padding: 3px;
+    color: black;
+    font-weight: bold;
+    background: #7DC6FA;
+    width: 253px;
+    display: none;
+text-align: center;
+}
+
+
+/* SUBMIT PAGE POSITIONING */
+.submit-page .formtabs-content .spacer:first-child {
+    margin-top: 270px;
+}
+
+.submit-page .formtabs-content .submit_text {
+position: absolute;
+    top: 234px;
+    overflow: auto;
+}
+
+/* Padding under search box */
+.sidebox .spacer, .icon-menu a 
+{
+    background-color: transparent;
+}
+
+/* Space out un ordered lists */
+div.md li
+{
+    padding-bottom: 2px;
+    margin-left: 10px;
+}
+
+/* Downvote Hover Bubble */
+.commentarea .arrow.down:hover:after 
+{    
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    padding: 5px;
+    background-color: #FF6766;
+    color: #fff;
+    border: 0;
+    content: "Doesn't contribute to discussion";
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-left: 25px;
+    margin-top: 5px;
+    opacity: 0.9;
+    border-radius: 0px 10px 10px 10px;
+}
+
